@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    /* ### Primary */
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    
+    /* ### Neutral */
+    
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+  }
+
+body {
+    background: url(../order-summary-component/images/pattern-background-desktop.svg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.content{
+    width: 340px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 360px;
+    text-align: center;
+}
+
+.text-content p {
+    padding-top: 1rem;
+    color: var(--Desaturatedblue);
+}
+
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    background-color: var(--Verypaleblue);
+    border-radius: 10px;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.annual-plan p {
+    color: var(--Desaturatedblue);
+}
+
+.btn {
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--Brightblue);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.cancel-btn{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--Desaturatedblue);
+}
+
+.cancel-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 400px) {
+    body {
+        background: url(../order-summary-component/images/pattern-background-mobile.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-box{
+        width: 340px;
+    }
+    
+    .content{
+        width: auto;
+    }
+
+    .text-content{
+        width: auto;
+        padding: 2rem;
+    }
+
+    .cancel-btn{
+        padding-bottom: 4rem;
+    }
+}
