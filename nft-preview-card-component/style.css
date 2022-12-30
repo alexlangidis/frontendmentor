@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+
+    /* ### Primary */
+
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--Verydarkblue_main: hsl(217, 54%, 11%);
+--Verydarkblue_card: hsl(216, 50%, 16%);
+--Verydarkblue_line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Verydarkblue_main);
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Verydarkblue_card);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.card-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+}
+
+.card-img:hover .card-img-overlay {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+
+.card-img-overlay {
+    position: absolute;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+#nft-image {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.card-part2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.title{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+
+.title:hover {
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.description {
+    color: var(--Softblue);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    font-size: 0.9rem;
+}
+
+.price img {
+   margin-right: 0.5rem;
+
+}
+
+.nft-price{
+    display: flex;
+    color: var(--Cyan);
+}
+
+.days-left {
+    display: flex;
+    color: var(--Softblue);
+}
+
+hr{
+    opacity: 0.2;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--Softblue);
+}
+
+.creator img {
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.creator span {
+    color: var(--White);
+}
+
+.creator span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
