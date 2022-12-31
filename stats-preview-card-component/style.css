@@ -10,13 +10,13 @@ font-family: "Lexend Deca", sans-serif;
       box-sizing: border-box;
   }
 
-  
 :root {
     /* ### Primary */
 
     --Verydarkblue_main_background: hsl(233, 47%, 7%);
     --Darkdesaturatedblue_card_background: hsl(244, 38%, 16%);
     --Softviolet_accent: hsl(277, 64%, 61%);
+    --Softviolet_accent1: hsl(277, 100%, 50%);
     
     /* ### Neutral */
     
@@ -25,9 +25,114 @@ font-family: "Lexend Deca", sans-serif;
     --Slightly_transparent_white_stat_headings: hsla(0, 0%, 100%, 0.6);
   }
 
-
-
   body{
     font-size: 15px;
     background-color: var(--Verydarkblue_main_background);
+
   }
+
+  .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    background-color: var(--Darkdesaturatedblue_card_background);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .content {
+    color: white;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .top-content h2 {
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    padding: 2rem;
+  }
+
+  .top-content span{
+    color: var(--Softviolet_accent);
+  }
+
+  .top-content p {
+    padding: 0 2rem;
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Slightly_transparent_white_stat_headings);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+
+  .bottom-content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 2rem;
+  }
+
+  .bottom-content h3 {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .bottom-content p {
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Slightly_transparent_white_stat_headings);
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+.img-div{
+  background: var(--Softviolet_accent1);
+}
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.6;
+ }
+
+
+ @media only screen and (max-width: 1180px){
+
+  .container {
+    height: 100%;
+    margin: 4rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .bottom-content{
+    flex-direction: column;
+  }
+ }
+
+ @media only screen and (max-width: 800px) {
+
+  .content{
+    width: auto;
+    height: auto;
+  }
+
+  .bottom-content{
+    padding: 0;
+  }
+ }
