@@ -22,12 +22,13 @@
 
 body {
     background: url(../order-summary-component/images/pattern-background-desktop.svg);
-    background-position:left;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--Paleblue);
 }
 
 .container {
@@ -42,7 +43,7 @@ body {
 .card-box {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -121,13 +122,10 @@ body {
 @media screen and (max-width: 400px) {
     body {
         background: url(../order-summary-component/images/pattern-background-mobile.svg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .card-box{
-        width: 340px;
+        max-width: 340px;
     }
     
     .content{
