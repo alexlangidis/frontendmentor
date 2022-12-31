@@ -89,6 +89,18 @@ body {
 
 }
 
+.social-icons i {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 0.3em;
+    text-align: center;
+  }
+
+  .social-icons i:hover{
+    border: 1px solid var(--SoftMagenta);
+  }
+
 .social-icons a:hover{
     color: var(--SoftMagenta);
     cursor: pointer;
