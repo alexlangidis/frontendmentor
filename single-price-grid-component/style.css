@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* ### Primary */
+
+--Cyan: hsl(179, 62%, 43%);
+--Cyan1: hsl(179, 74%, 62%);
+--BrightYellow: hsl(71, 73%, 54%);
+--BrightYellow1: hsl(71, 72%, 44%);
+
+/* ### Neutral */
+
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--LightGray);
+    height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2rem;
+    max-width: 700px;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(150, 148, 148, 0.25);
+}
+
+.content-box1 {
+    background-color: white;
+    padding: 2rem;
+}
+
+.content-box1 h1{
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+
+.content-box1 h2{
+    color: var(--BrightYellow);
+    margin-bottom: 20px;
+}
+
+.content-box1 p{
+    color: var(--GrayishBlue);
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.content-box2 {
+    background-color: var(--Cyan);
+    padding: 2rem;
+    color: white;
+}
+
+.content-box2 p:not(.price){
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.content-box2 .price{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content-box2 span {
+    color: var(--LightGray);
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 0.8;
+    padding-left: 1rem;
+}
+
+.btn {
+    color: white;
+    background-color: var(--BrightYellow);
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.4rem;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+}
+
+.btn:hover {
+    background: var(--BrightYellow1);
+    color: var(--cyan);
+    cursor: pointer;
+  }
+
+.content-box3 {
+    background-color: hsla(179, 62%, 43%, 0.699);
+    padding: 2rem;
+    color: white;
+    line-height: 0.5;
+}
+
+.content-box3 h2 {
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.content-box3 li {
+    list-style: none;
+    opacity: 0.8;
+    line-height: 1.8;
+}
+
+@media only screen and (min-width: 600px){
+    
+    
+    .content-bottom {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .content-box2 {
+        width: 50%;
+    }
+
+    .content-box3 {
+        width: 50%;
+    }
+
+    .container{
+        height: 100vh;
+    }
+    
+}
