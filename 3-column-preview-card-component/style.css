@@ -28,6 +28,9 @@
 /* (background, headings, buttons) */
 --Verylightgray : hsl(0, 0%, 95%); 
 
+--Transition: 0.8s ease;
+--Transition-0-6: 0.7s ease;
+
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -73,6 +76,7 @@ body{
     margin: 3rem;
     border-radius: 8px;
     overflow: hidden;
+    transition: var(--Transition);
 }
 
 .container h2 {
@@ -124,6 +128,7 @@ button:hover {
 
     body {
         height: 100vh;
+        transition: var(--Transition);
     }
 
     .container{
