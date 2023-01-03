@@ -55,14 +55,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     margin: 3rem;
-    border: 1px solid red;
     border-radius: 8px;
     overflow: hidden;
 }
