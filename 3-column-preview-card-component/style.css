@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* ### Primary */
+
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+/* (paragraphs) */
+--Transparentwhite : hsla(0, 0%, 100%, 0.75);
+
+/* (background, headings, buttons) */
+--Verylightgray : hsl(0, 0%, 95%); 
+
+}
+
+.Brightorange {
+   color: var(--Brightorange);
+   font-size: 1rem;
+}
+
+.Darkcyan {
+    color: var(--Darkcyan);
+    font-size: 1rem;
+}
+
+.Verydarkcyan {
+    color: var(--Verydarkcyan);
+    font-size: 1rem;
+}
+
+
+body{
+    font-size: 15px;
+    margin: 0 auto;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Verylightgray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    border: 1px solid red;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container h2 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.container p {
+    color: var(--Verylightgray);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.8;
+    margin: 1rem 0;
+    font-size: 18px;
+}
+
+.box1 {
+    background-color: var(--Brightorange);
+}
+
+.box2 {
+    background-color: var(--Darkcyan);
+}
+
+.box3 {
+    background-color: var(--Verydarkcyan);
+}
+
+.content {
+    padding: 3rem;
+}
+
+button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+  }
+  
+button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8.5px 30px;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (min-width: 900px){
+
+    body {
+        height: 100vh;
+    }
+
+    .container{
+        flex-direction: row;
+        width: 900px;
+    }
+
+    button {
+        margin-top: 6rem;
+    }
+  }
