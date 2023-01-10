@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* font-family: 'Libre Franklin', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* ### Primary */
+
+--Blue: hsl(223, 87%, 63%);
+
+/* ### Secondary */
+
+--PaleBlue: hsl(223, 100%, 88%);
+--LightRed: hsl(354, 100%, 66%);
+
+/* ### Neutral */
+
+--Gray: hsl(0, 0%, 59%);
+--VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    overflow: hidden;
+}
+
+.logo {
+    margin-bottom: 2rem;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 1rem;
+}
+
+.header-text span {
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.header-text p {
+    font-size: 20px;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 2rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-bottom: 4rem;
+}
+
+form input {
+    border-radius: 30px;
+    border: 1px solid var(--Gray);
+    opacity: 0.7;
+    padding: 1rem 2rem;
+    width: 400px;
+    margin-right: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--PaleBlue);
+}
+
+::placeholder {
+    color: var(--Gray);
+    opacity: 0.8;
+}
+
+button {
+    border-radius: 30px;
+    background-color: var(--Blue);
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+ion-icon {
+    color: var(--Blue);
+    margin-right: 20px;
+  }
+
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.icons ion-icon{
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 59%, 0.2);
+    padding: 0.3em;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.error {
+    border: 2px solid var(--LightRed);
+}
+
+.success {
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+
+
+#email-error {
+    color: var(--LightRed);
+    display: flex;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    form input{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+}
