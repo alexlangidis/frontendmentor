@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* ### Primary */
+
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    
+    /* ### Accent */
+    
+   --Blue: hsl(248, 32%, 49%);
+    
+    /*### Neutral */
+    
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-image: url(../intro-component-with-signup-form/images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: var(--Red);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    width: 1200px;
+}
+
+.box1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex: 1;
+}
+
+.box1 h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.box1 p {
+    font-size: 1rem;
+}
+
+.box2 {
+    padding: 2rem;
+    flex: 1;
+}
+
+.price-header {
+    background-color: var(--Blue);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: rgb(65, 65, 65) 0px 20px 30px -10px;
+}
+
+.price-header span {
+    font-weight: 400;
+}
+
+.form-border {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 8px;
+    height: 500px;
+    box-shadow: rgb(71, 71, 71) 0px 20px 30px -10px;
+}
+
+input {
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--GrayishBlue);
+    outline: none;
+}
+
+input::placeholder {
+    font-weight: 700;
+    
+}
+
+input:focus:not(.error, .success ){
+    outline: 2px solid var(--Blue);
+   
+}
+
+.error {
+    background: url(../intro-component-with-signup-form/images/icon-error.svg);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    border: 3px solid var(--Red);
+}
+
+.errorMsg {
+    color: var(--Red);
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.success:not(.error) {
+    border: 3px solid var(--Green);
+}
+
+button {
+    padding: 1rem;
+    background-color: var(--Green);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    margin-bottom: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.terms {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.terms a {
+    text-decoration: none;
+    color: var(--Red);
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    
+    .card {
+        display: flex;
+        width: 900px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 880px) {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .box1 {
+        text-align: center;
+    }
+}

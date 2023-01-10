@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="stylesheet" href="style.css">
+      <script src="../intro-component-with-signup-form/script.js" defer></script>
+      <title>Intro component with sign up form</title>
+      <style>
+        .attribution { font-size: 11px; text-align: center; margin-bottom: 2rem;}
+        .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
+    </head>
+    <body>
+
+      
+      <main class="container">
+
+          <div class="card">
+
+            <div class="box1">
+              <h1>Learn to code by watching others</h1>
+              <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                but understanding how developers think is invaluable. </p>
+            </div>
+
+
+            <div class="box2">
+                <h2 class="price-header">Try it free 7 days <span>then $20/mo. thereafter</span></h2>
+
+                <form name="myForm" action="" class="form-border" id="form">
+                  
+                  <input type="text" placeholder="First Name" id="fname">
+                  <span id="fname-error"></span>
+
+                  <input type="text" placeholder="Last Name" id="lname">
+                  <span id="lname-error"></span>
+                  
+                  <input type="text" placeholder="Email Address" id="email">
+                  <span id="email-error"></span>
+                  
+                  <input type="password" placeholder="Password" id="password">
+                  <span id="password-error"></span>
+                  
+                  <button type="submit" value="Submit">Claim your free trial</button>
+                  <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+                </form>
+            </div>
+          </div>
+        <footer class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+          <a href="https://www.frontendmentor.io/profile/alexlag7" target="_blank">alexlag7</a>.
+        </footer>
+      </main>
+      
+
+    </body>
+  </html>
