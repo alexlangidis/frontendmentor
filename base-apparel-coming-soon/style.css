@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /* ### Primary */
+
+---DesaturatedRed: hsl(0, 36%, 70%);
+---SoftRed: hsl(0, 93%, 68%);
+
+/* ### Neutral */
+
+--DarkGrayishRed: hsl(0, 6%, 24%);
+
+/* ### Gradients */
+
+/* ---Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+---Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%); */
+
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+
+
+.section-3 {
+    display: none;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../base-apparel-coming-soon/images/bg-pattern-desktop.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    width: 65%;
+}
+
+.logo{
+   position: absolute;
+   top: 6rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    margin: 0 auto;
+}
+
+.text span {
+    color: var(---DesaturatedRed);
+    font-weight: 300;
+}
+
+.text h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(---DesaturatedRed);
+    margin-bottom: 2rem;
+}
+
+.form{
+    display: flex;
+}
+
+form input {
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    border: 1px solid var(---DesaturatedRed);
+    outline: none;
+    width: 500px;
+}
+
+::placeholder{
+    color: var(---DesaturatedRed);
+}
+
+input:focus {
+    border: 2px solid var(---DesaturatedRed);
+}
+
+button{
+    padding: 0.8rem 2.7rem;
+    border-radius: 30px;
+    transform: translateY(4px);
+    border: 1px solid var(---DesaturatedRed);
+    background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    margin-left:-100px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg, hsl(0, 86%, 81%), hsl(0, 71%, 67%));
+}
+
+.section-2 {
+    height: 100vh;
+    background: url(../base-apparel-coming-soon/images/hero-desktop.jpg);
+    background-position:center center;
+    background-repeat: no-repeat no-repeat;
+    background-size:cover;
+    width: 40%;
+}
+
+.error {
+    background: url(../base-apparel-coming-soon/images/icon-error.svg);
+    background-position: 78% 50%;
+    background-repeat: no-repeat;
+    border: 2px solid var(---SoftRed);
+}
+
+.success {
+    border: 2px solid hsl(154, 59%, 51%);
+}
+
+#email-error {
+    color: var(---SoftRed);
+    display: flex;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+@media only screen and (max-width: 800px){
+    
+    
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    
+    .section-3 {
+        display: flex;
+        justify-content: flex-start;
+        margin: 2rem 4rem;
+        width: 100%;
+    }
+    
+    .section-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    
+    .logo{
+       display: none;
+    }
+    
+    .section-2 {
+        margin-top: 1rem;
+        background: url(../base-apparel-coming-soon/images/hero-mobile.jpg);
+        background-position:center top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px){
+
+    .text h1{
+        font-size: 3rem;
+    }
+
+    .text {
+        width: auto;
+    }
+
+    form input {
+        width: 300px;
+    }
+
+    .section-1{
+        width: auto;
+        padding: 1rem;
+    }
+    
+    .error {
+        background-position: 60% 50%;
+    }
+}
