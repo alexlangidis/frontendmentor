@@ -65,6 +65,7 @@ img {
 }
 
 .recipe p {
+  color: var(--WengeBrown);
   margin: 1rem 0;
 }
 
