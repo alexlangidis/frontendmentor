@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+:root {
+  /* ### Primary */
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+
+  --Outfit: "Outfit", sans-serif;
+  --YoungSerif: "Young Serif", serif;
+}
+
+body {
+  font-family: var(--Outfit);
+  background-color: var(--Eggshell);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+}
+
+.container {
+  padding: 2.8rem;
+  background-color: var(--White);
+  max-width: 768px;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.recipe h1 {
+  font-family: var(--YoungSerif);
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.recipe p {
+  margin: 1rem 0;
+}
+
+.preparation {
+  background-color: var(--RoseWhite);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.preparation h3 {
+  color: var(--DarkRaspberry);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.preparation span {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.preparation ul li::marker {
+  color: var(--DarkRaspberry);
+  font-weight: bold;
+}
+
+.preparation ul li {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  color: var(--WengeBrown);
+}
+
+.ingredients {
+  margin: 2rem 0;
+}
+
+.ingredients h2 {
+  color: var(--Nutmeg);
+  font-size: 2rem;
+  font-family: var(--YoungSerif);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.ingredients ul li::marker {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+
+.ingredients ul li {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  color: var(--WengeBrown);
+}
+
+.ingredients p {
+  margin-left: 1rem;
+}
+
+.line {
+  border: 1px solid;
+  border-color: var(--LightGrey);
+  margin: 2rem 0;
+}
+
+.instructions h2 {
+  color: var(--Nutmeg);
+  font-size: 2rem;
+  font-family: var(--YoungSerif);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.instructions span {
+  font-weight: bold;
+}
+
+.instructions ol li::marker {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+
+.instructions ol li {
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  color: var(--WengeBrown);
+}
+
+.instructions p {
+  margin-left: 1rem;
+}
+
+.nutrition h2 {
+  color: var(--Nutmeg);
+  font-size: 2rem;
+  font-family: var(--YoungSerif);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.nutrition p {
+  color: var(--WengeBrown);
+  margin-bottom: 1rem;
+}
+
+.nutrition-table {
+  padding: 2rem;
+}
+
+.nutrition-table .item {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-color: var(--LightGrey);
+  margin-bottom: 1rem;
+}
+
+.nutrition-table .item > * {
+  width: 100px;
+  margin-right: auto;
+}
+
+.nutrition-table .item:last-child {
+  margin-bottom: -3rem;
+  border: none;
+}
+
+.nutrition-table .item .amount {
+  margin-left: 2rem;
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+    margin-top: 0;
+    border-radius: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  .image-desktop {
+    display: none;
+  }
+
+  .image-mobile {
+    display: flex;
+  }
+}
